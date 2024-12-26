@@ -41,7 +41,7 @@ app.use(express.json());
 
 // MongoDB Connection String (Replace `<username>`, `<password>`, and `<cluster-url>` with your Atlas details)
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://ayushsingh186312:e3fyj7cjkDcaApq5@cluster0.1bxn4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://ayushsingh186312:rMm5I3THjQgngvnr@cluster0.1bxn4.mongodb.net/";
 
 // Connect to MongoDB Atlas
 console.log("Connected to MongoDB Atlas");
