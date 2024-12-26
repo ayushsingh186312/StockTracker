@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:5000/api/shares'
+const baseURL = 'https://stocktracker-6.onrender.com/api/shares'
 
 export const getHeldShares = () => {
     return fetch(baseURL)
