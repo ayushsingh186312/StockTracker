@@ -1,7 +1,7 @@
 import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import AnnotationsFactory from 'highcharts/modules/annotations';
-import { apikeyPH } from '../../services/apikey';
+import { apikeyPH } from '../../services/apikey.js';
 import { useEffect, useState } from 'react';
 AnnotationsFactory(Highcharts);
 

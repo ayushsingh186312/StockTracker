@@ -5,7 +5,7 @@ import StockItemDetails from '../components/stockMarketComponents/StockItemDetai
 import FavouriteStock from '../components/stockMarketComponents/FavouriteStock';
 import {Row, Col} from "react-bootstrap";
 import './StockMarketContainer.css'
-import { apikey } from '../services/apikey';
+import { apikey } from '../services/apikey.js';
 import {fetchedStockDetails, fetchedStockPrices} from '../components/stockMarketComponents/fetchedData';
 
 
