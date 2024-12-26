@@ -71,6 +71,7 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
 //});
 
 // Start the server
-app.listen("https://stocktracker-6.onrender.com", function () {
+const port="https://stocktracker-6.onrender.com" || 5000
+app.listen(port, function () {
     console.log(`Listening on port ${this.address().port}`);
 });
