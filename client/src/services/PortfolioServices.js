@@ -1,4 +1,4 @@
-const baseURL = 'https://stocktracker-6.onrender.com/api/shares'
+const baseURL = process.env.PORT || 'http://localhost:5000/api/shares'
 
 export const getHeldShares = () => {
     return fetch(baseURL)
