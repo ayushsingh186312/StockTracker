@@ -1,32 +1,3 @@
-//import { connectDB } from "./config/db.js"
-//const express = require('express');
-//const app = express();
-//const MongoClient = require('mongodb').MongoClient;
-//const createRouter = require('./helpers/create_router');
-//const cors = require('cors');
-
-//app.use(cors());
-//app.use(express.json());
-//connectDB();
-//MongoClient.connect('mongodb://localhost:27017', {useUnifiedTopology: true})
-//.then((client) => {
-//    const db = client.db('portfolio');
-//    const sharesCollection = db.collection('shares');
-//    const sharesRouter = createRouter(sharesCollection);
-//    app.use('/api/shares', sharesRouter);
-//})
-//.catch(console.error)
-//api endpoints
-//app.use('/api/shares', sharesRouter);
-
-
-//app.get("/",(req,res)=>{
-//    res.send("API Working")
-//})
-//app.listen(5000, function(){
-//    console.log(`Listening on port ${ this.address().port }`);
-//});
-//import { connectDB } from "./db/db.js";
 const path = require("path");
 const express = require('express');
 const app = express();
@@ -39,6 +10,8 @@ const _dirname= path.resolve();
 app.use(cors());
 app.use(express.json());
 
+
+const port=process.env.PORT || 5000;
 // MongoDB Connection String (Replace `<username>`, `<password>`, and `<cluster-url>` with your Atlas details)
 const MongoClient = require('mongodb').MongoClient;
 const uri = "mongodb+srv://ayushsingh186312:h0MMXqdc1jobJb9x@cluster0.1bxn4.mongodb.net/shares";
@@ -71,7 +44,7 @@ MongoClient.connect(uri, { useUnifiedTopology: true })
 //});
 
 // Start the server
-const port="https://stocktracker-6.onrender.com" || 5000
+
 app.listen(port, function () {
-    console.log(`Listening on port ${this.address().port}`);
+    console.log(`Server listening on port ${port}`);
 });
